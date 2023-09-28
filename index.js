@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-app.get("/users", useRouter);
+app.get("/", useRouter);
 
 app.listen(8000, (req, res) => {
   console.log(chalk.red.bgGreen("Server is running on PORT 8000"));
